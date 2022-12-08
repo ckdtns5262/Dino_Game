@@ -1,0 +1,80 @@
+#game{
+    height: 262px;
+    position: relative;
+    margin: 9%;
+}
+#dino {
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+}
+#tree {
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+    margin-bottom: -0.5%;
+}
+#ground {
+    position: absolute;
+    bottom: 0%;
+    left: -50%;
+}
+#tree img, #tree1 img {
+    height: 60px;
+    width: 40px;
+}
+#tree1{
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+    visibility: hidden;
+    margin-bottom: -0.5%;
+}
+
+.cactus{
+    animation-name: move;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.jump {
+    animation-name: jump;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+}
+
+@keyframes move {
+    0%{
+        right :0%;
+    }
+    100%{
+        right: 100%;
+    }
+}
+@keyframes jump {
+    0%{
+        bottom: 0%;
+    }
+    50%{
+        bottom: 70px;
+    }
+    100%{
+        bottom: 0%;
+    }
+}
+#btn{
+    text-align: center;
+    margin-top: -40px;
+}
+
+button{
+    height: 70px;
+    width: 140px;
+    border-radius: 25px;
+    background-color: darkgray;
+    color: white;
+    font-size: x-large;
+    font-weight: bold;
+    cursor: pointer;
+}
